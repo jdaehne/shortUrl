@@ -34,7 +34,7 @@
 	},
 	"database": {
 		"tables": [
-			"shorturls"
+			"ShortUrlItem"
 		]
 	},
 	"dependencies": [{

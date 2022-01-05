@@ -24,7 +24,7 @@ if ($object->xpdo) {
 
             $manager = $modx->getManager();
 
-            $manager->createObjectContainer('shorturls');
+            $manager->createObjectContainer('ShortUrlItem');
 
             break;
     }
