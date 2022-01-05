@@ -1,0 +1,6 @@
+_packages/*.*
+!_packages/.gitignore
+!_packages/*.zip
+
+node_modules/
+core/components/*/vendor/

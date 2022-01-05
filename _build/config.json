@@ -1,0 +1,53 @@
+{
+	"name": "shortUrl",
+	"lowCaseName": "shorturl",
+	"description": "Short Url Redirects",
+	"author": "Jan Dähne",
+	"version": "1.0.0-pl",
+	"package": {
+		"elements": {
+			"plugins": [
+				{
+					"name": "shortUrl",
+					"file": "shorturl.plugin.php",
+					"description": "Short-Url redirect.",
+					"events": [
+						"OnPageNotFound"
+					]
+				}
+			]
+		},
+	    "systemSettings": [],
+		"actions": [{
+            "id": 1
+            ,"controller": "index"
+            ,"langTopics": "shorturl:default"
+        }],
+		"menus": [
+			{
+	            "text": "shorturl.menu",
+	            "description": "shorturl.menu_desc",
+	            "action": "home",
+	            "parent": "components"
+        	}
+        ]
+	},
+	"database": {
+		"tables": [
+			"shorturls"
+		]
+	},
+	"dependencies": [{
+		"name": "php",
+		"version": ">=5.6"
+	},
+	{
+		"name": "modx",
+		"version": ">=2.6"
+	}],
+	"build": {
+		"readme": "docs/readme.md",
+		"license": "docs/license.md",
+		"changelog": "docs/changelog.md"
+	}
+}
