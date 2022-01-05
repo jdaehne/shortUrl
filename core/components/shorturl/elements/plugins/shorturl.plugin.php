@@ -16,7 +16,7 @@ if ($modx->event->name == 'OnPageNotFound') {
 
     // get url parameters
     $get = $modx->getOption('GET', $modx->request->parameters, '');
-    $short = $get['q'];
+    $short = rtrim($get['q'], '/');
     $url = $modx->getOption('site_url') . $short;
 
     // check if url exists
